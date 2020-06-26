@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Calculatrice en javascript</title>
+        <script type="text/javascript" src="index.js"></script>
+        <link rel="stylesheet" media="screen, print, handheld" type="text/css" href="css/styles.css" />
+    </head>
+    <body>
+
+<div id="sbox">
+    <input type="text" readonly="readonly" name="calc_resultat" id="calc_resultat" class="calc_resultat" onkeydown="javascript:key_detect_calc('calc',event);" />
+  <div id="box">
+
+    <input type="button" class="calc_btn" value="clr" onclick="f_calc('calc','clr');" />
+    <input type="button" class="calc_btn" value="&larr;" onclick="f_calc('calc','nbs');" />
+    <input type="button" class="calc_btn" value="%" onclick="f_calc('calc','%');" />
+    <input type="button" class="calc_btn" value="+" onclick="f_calc('calc','+');" />
+    <input type="button" class="calc_btn" value="-" onclick="f_calc('calc','-');" />
+    <input type="button" class="calc_btn" value="x" onclick="f_calc('calc','*');" />
+    <input type="button" class="calc_btn" value="&divide;" onclick="f_calc('calc','/');" />
+
+    <input type="button" class="calc_btn" value="0" onclick="add_calc('calc',0);" />
+    <input type="button" class="calc_btn" value="1" onclick="add_calc('calc',1);" />
+    <input type="button" class="calc_btn" value="2" onclick="add_calc('calc',2);" />
+    <input type="button" class="calc_btn" value="3" onclick="add_calc('calc',3);" />
+    <input type="button" class="calc_btn" value="4" onclick="add_calc('calc',4);" />
+    <input type="button" class="calc_btn" value="5" onclick="add_calc('calc',5);" />
+    <input type="button" class="calc_btn" value="6" onclick="add_calc('calc',6);" />
+    <input type="button" class="calc_btn" value="7" onclick="add_calc('calc',7);" />
+    <input type="button" class="calc_btn" value="8" onclick="add_calc('calc',8);" />
+    <input type="button" class="calc_btn" value="9" onclick="add_calc('calc',9);" />
+    <input type="button" class="calc_btn" value="," onclick="add_calc('calc','.');" />
+    <input type="button" class="calc_btn" value="=" onclick="f_calc('calc','=');" />
+  </div>
+</div>
+
+    <script> document.getElementById('calc').onload=initialiser_calc('calc'); </script>
+
+    </body>
+</html>
